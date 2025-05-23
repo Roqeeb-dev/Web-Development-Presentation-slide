@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.first-page {
+    height: 100vh;
+    Background: linear-gradient(to right, #2e1065, #6b21a8, #701a75);
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-inline: 70px;
+}
+.first-page img {
+    height: 10rem;
+    margin-bottom: 20px;
+}
+.first-page h1 {
+    font-size: 4.1rem;
+    font-weight: 800;
+}
+.first-page p {
+    font-size: 22px;
+    padding-inline: 60px;
+    line-height: 1.5;
+}
+h2 {
+    text-align: center;
+    padding-block: 15px;
+    background-color: #F8E7F6;
+}
+.container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    background-color: #F4CCE9;
+}
+.card {
+    padding: 0 0 10px 0;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease ;
+}
+.card:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+.card p {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: ;
+}
+.card img {
+    width: 100%;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+.card button {
+    margin: 15px;
+    padding: 12px 30px;
+    background-color: #56021F;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease ;
+}
+.card button:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:400px) {
+    .first-page {
+        padding-block: 40px;
+    }
+    .first-page img {
+        height: 100px;
+    }
+    .first-page h1 {
+        font-size: 2rem;
+    }
+    .first-page p{ 
+        font-size: 14px;
+        padding-inline: ;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
