@@ -139,6 +139,9 @@ a {
         flex-direction: column;
         justify-content: space-around;
     }
+    .rolling-box {
+        margin: 15px;
+    }
     .first-page img {
         height: 100px;
     }
