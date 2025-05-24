@@ -37,13 +37,13 @@ body {
       justify-content: center;
       align-items: center;
       color: white;
-      font-size: 32px;
+      font-size: 30px;
       font-weight: bold;
       text-align: center;
       margin: 25px;
       margin-inline: auto;
       animation: rollAndColor 7s linear infinite;
-      
+
     }
     
 
@@ -51,12 +51,12 @@ body {
       0% {
         transform: rotate(0 deg);
         background-color: red;
-        color: black ;
+        color: white ;
       }
       25% {
         transform: rotate(90deg);
-        background-color: blue;
-        color: green;
+        background-color: navy;
+        color: ghostwhite;
       }
       50% {
         transform: rotate(180deg);
@@ -65,8 +65,8 @@ body {
       }
       75% {
         transform: rotate(270deg);
-        background-color: yellow;
-        color: black; /* change text color for contrast */
+        background-color: rgba(255, 255, 0, 0.438);
+        color: whitesmoke; /* change text color for contrast */
       }
       100% {
         transform: rotate(360deg);
