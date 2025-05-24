@@ -12,8 +12,7 @@ body {
     Background: linear-gradient(to right, #2e1065, #6b21a8, #701a75);
     color: white;
     text-align: center;
-    padding-top: 100px;
-    padding-inline: 70px;
+    padding: 70px;
 }
 .first-page img {
     height: 10rem;
@@ -28,6 +27,55 @@ body {
     padding-inline: 60px;
     line-height: 1.5;
 }
+   
+.rolling-box {
+      width: 230px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin: 25px;
+      margin-inline: auto;
+      animation: rollAndColor 7s linear infinite;
+      
+    }
+    
+
+    @keyframes rollAndColor {
+      0% {
+        transform: rotate(0 deg);
+        background-color: red;
+        color: black ;
+      }
+      25% {
+        transform: rotate(90deg);
+        background-color: blue;
+        color: green;
+      }
+      50% {
+        transform: rotate(180deg);
+        background-color: green;
+        color: white;
+      }
+      75% {
+        transform: rotate(270deg);
+        background-color: yellow;
+        color: black; /* change text color for contrast */
+      }
+      100% {
+        transform: rotate(360deg);
+        background-color: red;
+        color: white;
+      }
+    }
+
+
 h2 {
     text-align: center;
     padding-block: 15px;
@@ -76,7 +124,7 @@ a {
     transform: scale(1.1);
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .first-page {
         display: flex;
         flex-direction: column;
@@ -107,7 +155,7 @@ a {
     }
 }
 
-@media (min-width:401px) and (max-width:800px) {
+@media (min-width:501px) and (max-width:900px) {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
