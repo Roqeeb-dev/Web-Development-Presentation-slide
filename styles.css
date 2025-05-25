@@ -98,7 +98,8 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 20px;
         height: 100vh;
         padding: 5px;
     }
@@ -107,9 +108,6 @@ a {
         align-items: center;
         flex-direction: column;
         justify-content: space-around;
-    }
-    .rolling-box {
-        margin: 15px;
     }
     .first-page img {
         height: 100px;
@@ -121,6 +119,9 @@ a {
     .first-page p{ 
         font-size: 18px;
         padding-inline: 10px;
+    }
+    .details {
+        margin: 5px;
     }
     h2 {
         text-align: center;
