@@ -22,60 +22,29 @@ body {
     font-size: 4.1rem;
     font-weight: 800;
 }
-.first-page p {
+.first-page p, .details {
     font-size: 22px;
     padding-inline: 60px;
     line-height: 1.5;
 }
-   
-.rolling-box {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      border-radius: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      text-align: center;
-      margin: 25px;
-      margin-inline: auto;
-      animation: rollAndColor 7s linear infinite;
-
-    }
-    
-
-    @keyframes rollAndColor {
-      0% {
-        transform: rotate(0 deg);
-        background-color: red;
-        color: white ;
-      }
-      25% {
-        transform: rotate(90deg);
-        background-color: navy;
-        color: ghostwhite;
-      }
-      50% {
-        transform: rotate(180deg);
-        background-color: green;
-        color: white;
-      }
-      75% {
-        transform: rotate(270deg);
-        background-color: rgba(255, 255, 0, 0.438);
-        color: whitesmoke; /* change text color for contrast */
-      }
-      100% {
-        transform: rotate(360deg);
-        background-color: red;
-        color: white;
-      }
-    }
-
-
+.details {
+    margin-top: 8px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.details a {
+    font-size: 24px;
+    text-decoration: underline;
+}
+.ww {
+    font-size: 22px;
+    font-style: italic;
+    margin: 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 h2 {
     text-align: center;
     padding-block: 15px;
